@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="Aplicacao">
+    <head>
+        <title>Banco</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" type="text/css" href="estilo.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+        <script src="controlador.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-animate.js"></script>
+        
+        
+    </head>
+    <body ng-controller="ControladorGeral as controlador" >
+        <h1>Bem vindo ao Banco!</h1>
+        <h2>O que deseja fazer? </h2> </br>
+        
+        <button ng-click="controlador.mostrar=true" ng-hide="controlador.mostrar==true">Mostrar Opções</button>
+        <button ng-click="controlador.mostrar=false" ng-hide="controlador.mostrar==false">Ocultar Opções</button>
+        <br/> <br/>
+        
+        <div  ng-if="controlador.mostrar==true">
+            <a href="novaConta.jsp"> Criar nova conta</a> <br/><br/>
+            <a href="sacar.jsp"> Sacar </a><br/><br/>
+            <a href="depositar.jsp"> Depositar </a> <br/><br/>
+            <a href="transferir.jsp"> Transferir</a> <br/>
+        </div>
+        
+    </body>
+</html>

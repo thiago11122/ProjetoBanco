@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>controle</servlet-name>
+        <servlet-class>controle.controle</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controle3</servlet-name>
+        <servlet-class>controle.controle3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>controle3</servlet-name>
+        <url-pattern>/controle3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controle</servlet-name>
+        <url-pattern>/sacar</url-pattern>
+        <url-pattern>/transferir</url-pattern>
+        <url-pattern>/depositar</url-pattern>
+        <url-pattern>/cadastrarPessoa</url-pattern>
+        <url-pattern>/retornarDados</url-pattern>
+        <url-pattern>/pesquisarCPF</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

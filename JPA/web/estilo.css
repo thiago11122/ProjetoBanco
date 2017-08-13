@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/07/2017, 17:23:05
+    Author     : Thiago
+*/
+
+body{
+   background-color: beige;
+   text-align: center;
+}
+
+h1{
+    font-size:20pt;
+}
+
+h2{
+    font-size:16pt;
+}
+
+a{
+   
+    font-size:14pt;
+}
+
+
+
+
+div.ng-enter{
+    transition:0.5s ease all;
+    opacity:0;
+    transform: translateY(-100%);
+    
+}
+
+div.ng-enter.ng-enter-active{
+    opacity:1;
+    transform: translateY(0);
+}
+
+div.ng-leave{
+    transition: 0.5s ease all;
+    opacity:1;
+    transform: translateY(0);
+}
+
+div.ng-leave-active{
+    opacity:0;
+    transform: translateY(-100%);
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+
